@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=FirstSetup
+Comment=Restricted Plasma session for initial setup
+TryExec=/usr/bin/Hyprland
+Type=Application
+DesktopNames=Hyprland
+X-GDM-SessionRegisters=true
+NoDisplay=true

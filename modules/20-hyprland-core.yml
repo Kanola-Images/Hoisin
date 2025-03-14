@@ -9,7 +9,7 @@ source:
   - hyprland-backgrounds
   - hyprpaper
   - hyprcursor-util
-  - hyprpolkitagent
+  - polkit-kde-agent-1 # hyprpolkitagent doesn't exist in debian yet ;(
 
   - waybar
   - tofi
@@ -17,7 +17,6 @@ source:
   - dunst
   - pipewire
   - wireplumber
-  - qt5-wayland
   - qt6-wayland
 
   - xdg-desktop-portal

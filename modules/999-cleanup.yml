@@ -3,3 +3,6 @@ type: shell
 commands:
 # Fix kscreenlocker
 - chmod u+s /sbin/unix_chkpwd
+- chmod -R 644 /etc/firstsetup-workarounds/
+- chmod -R 755 /usr/share/org.vanillaos.FirstSetup
+- mv /etc/firstsetup-workarounds/firstsetup.desktop /usr/share/wayland-sessions/firstsetup.desktop
