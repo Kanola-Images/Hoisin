@@ -2,6 +2,7 @@ name: hyprland-core
 type: apt
 source:
   packages:
+  - greetd
   - wlgreet
   - libpam-systemd
 
