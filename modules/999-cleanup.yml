@@ -1,0 +1,5 @@
+name: cleanup
+type: shell
+commands:
+# Fix kscreenlocker
+- chmod u+s /sbin/unix_chkpwd

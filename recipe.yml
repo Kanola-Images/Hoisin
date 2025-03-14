@@ -1,0 +1,78 @@
+name: Hoisin Hyprland Desktop
+id: hyprland
+
+stages:
+- id: build
+  base: ghcr.io/kanola-images/base:main
+  singlelayer: false
+  labels:
+    maintainer: Kanola Contributors
+  args:
+    DEBIAN_FRONTEND: noninteractive
+  runs:
+    commands:
+      - echo 'APT::Install-Recommends "1";' > /etc/apt/apt.conf.d/01norecommends
+
+  modules:
+  - name: init-setup
+    type: shell
+    commands:
+    - lpkg --unlock
+    - apt update
+    - apt upgrade -y
+    - apt clean
+
+  - name: vanilla-tools
+    type: shell
+    source:
+      type: tar
+      # switch to production build once in production
+      url: https://github.com/Vanilla-OS/vanilla-tools/releases/download/continuous/vanilla-tools.tar.gz
+    commands:
+    - mkdir -p /usr/bin
+    - cp /sources/vanilla-tools/vanilla-tools/lpkg /usr/bin/lpkg
+    - cp /sources/vanilla-tools/vanilla-tools/cur-gpu /usr/bin/cur-gpu
+    - chmod +x /usr/bin/lpkg
+    - chmod +x /usr/bin/cur-gpu
+
+  - name: packages-modules
+    type: includes
+    includes:
+      - modules/20-hyprland-core.yml
+      - modules/30-hyprland-essentials.yml
+      - modules/161-hyprland-utilities.yml
+      - modules/200-hyprland-common.yml
+      - modules/999-cleanup.yml
+
+  - name: cleanup
+    type: shell
+    commands:
+    - apt autoremove -y
+    - apt clean
+    - lpkg --lock
+
+  - name: sysconf-setup
+    type: shell
+    commands:
+      - rsync -a /etc/ /sysconf/
+
+  - name: fsguard
+    type: fsguard
+    CustomFsGuard: false
+    FsGuardLocation: "/usr/sbin/FsGuard"
+    GenerateKey: true
+    FilelistPaths: ["/usr/bin"]
+    modules:
+      - name: remove-prev-fsguard
+        type: shell
+        commands:
+          - rm -rf /FsGuard
+          - rm -f ./minisign.pub ./minisign.key
+          - chmod +x /usr/share/init.d/010-fsguard.sh
+
+  - name: cleanup2
+    type: shell
+    commands:
+      - rm -rf /tmp/*
+      - rm -rf /var/tmp/*
+      - rm -rf /sources

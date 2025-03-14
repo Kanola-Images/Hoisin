@@ -1,0 +1,15 @@
+name: hyprland-core
+type: apt
+source:
+  packages:
+  - gdm3
+  - libpam-systemd
+
+  - hyprland
+  - hyprland-backgrounds
+  - hyprpaper
+  - hyprcursor-util
+
+  - xdg-desktop-portal
+  - xdg-desktop-portal-hyprland
+  - xdg-desktop-portal-gtk

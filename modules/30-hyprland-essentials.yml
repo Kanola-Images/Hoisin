@@ -1,0 +1,7 @@
+name: hyprland-essentials
+type: apt
+source:
+  packages: #Please ignore the plasma tools - I just need a working system for testing, this will be swapped out later.
+  - ark
+  - dolphin
+  - dolphin-plugins
