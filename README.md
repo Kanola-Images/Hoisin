@@ -1,2 +1,22 @@
-# Hoisin
-An image for VanillaOS built around the Hyprland desktop environment. 
+# Hoisin Hyprland Image
+
+Containerfile for building Kanola, an unofficial Vanilla OS Hyprland image.
+
+This image is based on top of [`kanola-images/base`](https://github.com/Kanola-Images/Base-Image/pkgs/container/base) and offers the default
+Unofficial Vanilla OS Desktop Experience with Hyprland.
+
+## Switch your Installation to this image
+
+> [!CAUTION]
+> This WIP image is experimental and isn't suitable for production. If you encounter any bugs during testing, please report them in this repository.
+
+- Edit the `/etc/abroot/abroot.json` file with the `host-shell pkexec nano /etc/abroot/abroot.json` command.
+- Change the "name" entry from something like `vanilla-os/desktop` to `kanola-images/hyprland` (**Note**: All characters must be in lowercase).
+- Now, Run `abroot upgrade` to switch to your custom image.
+
+## Build
+
+```bash
+vib build recipe.yml
+podman image build -t kanola-images/hyprland .
+```
