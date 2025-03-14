@@ -5,4 +5,5 @@ commands:
 - chmod u+s /sbin/unix_chkpwd
 - chmod -R 644 /etc/firstsetup-workarounds/
 - chmod -R 755 /usr/share/org.vanillaos.FirstSetup
-- mv /etc/firstsetup-workarounds/firstsetup.desktop /usr/share/wayland-sessions/firstsetup.desktop
+- cp /etc/firstsetup-workarounds/firstsetup.desktop /usr/share/wayland-sessions/firstsetup.desktop
+- mv /etc/firstsetup-workarounds/firstsetup.desktop /usr/share/xsessions/firstsetup.desktop
