@@ -7,3 +7,4 @@ commands:
 - chmod -R 755 /usr/share/org.vanillaos.FirstSetup
 - cp /etc/firstsetup-workarounds/firstsetup.desktop /usr/share/wayland-sessions/firstsetup.desktop
 - mv /etc/firstsetup-workarounds/firstsetup.desktop /usr/share/xsessions/firstsetup.desktop
+- mv /etc/greetd/config.toml.override /etc/greetd/config.toml

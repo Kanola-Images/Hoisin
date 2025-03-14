@@ -3,7 +3,7 @@ type: apt
 source:
   packages:
   - greetd
-  - wlgreet
+  - tuigreet
   - libpam-systemd
 
   - hyprland
