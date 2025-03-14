@@ -38,7 +38,6 @@ stages:
   - name: packages-modules
     type: includes
     includes:
-      - modules/10-prevent-gnome.yml
       - modules/20-hyprland-core.yml
       - modules/30-hyprland-essentials.yml
       - modules/161-hyprland-utilities.yml

@@ -1,4 +1,0 @@
-name: no-sddm
-type: shell
-commands:
-- apt-mark hold gnome-shell gnome-session

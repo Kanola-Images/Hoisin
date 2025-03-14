@@ -2,7 +2,7 @@ name: hyprland-core
 type: apt
 source:
   packages:
-  - gdm3
+  - wlgreet
   - libpam-systemd
 
   - hyprland
