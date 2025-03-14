@@ -9,6 +9,16 @@ source:
   - hyprland-backgrounds
   - hyprpaper
   - hyprcursor-util
+  - hyprpolkitagent
+
+  - waybar
+  - tofi
+  
+  - dunst
+  - pipewire
+  - wireplumber
+  - qt5-wayland
+  - qt6-wayland
 
   - xdg-desktop-portal
   - xdg-desktop-portal-hyprland
