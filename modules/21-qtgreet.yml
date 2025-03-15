@@ -1,0 +1,14 @@
+name: qtgreet
+type: meson
+buildflags:
+  - --prefix=/usr --buildtype=release -Dbuild_greetwl=false
+source:
+  type: git
+  url: https://gitlab.com/marcusbritanicus/QtGreet.git
+  tag: v2.0.2
+modules:
+- name: qtgreet-deps-install
+  type: apt
+  source:
+    packages:
+    - meson
