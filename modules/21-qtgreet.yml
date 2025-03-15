@@ -12,14 +12,13 @@ modules:
   source:
     packages:
     - meson
-    - ninja
-    - libpng
+    - ninja-build
+    - libpng-dev
     - qtbase5-dev
     - qtbase5-dev-tools
     - qt6-base-dev
     - qt6-wayland
-    - wayland
-    - systemd-logind
+    - libwayland-dev
 - name: wayqt
   type: meson
   buildflags:
