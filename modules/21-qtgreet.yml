@@ -16,6 +16,7 @@ modules:
     - libpng-dev
     - qtbase5-dev
     - qtbase5-dev-tools
+    - qt5-qmake
     - qt6-base-dev
     - qt6-wayland
     - libwayland-dev
