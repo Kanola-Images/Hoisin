@@ -24,7 +24,7 @@ modules:
 - name: wayqt
   type: meson
   buildflags:
-  - --prefix=/usr --buildtype=release
+    - --prefix=/usr --buildtype=release
   source:
     type: git
     url: https://gitlab.com/desktop-frameworks/wayqt.git
@@ -32,7 +32,7 @@ modules:
 - name: dfl-ipc
   type: meson
   buildflags:
-  - --prefix=/usr --buildtype=release
+    - --prefix=/usr --buildtype=release
   source:
     type: git
     url: https://gitlab.com/desktop-frameworks/ipc.git
@@ -40,7 +40,7 @@ modules:
 - name: dfl-apps
   type: meson
   buildflags:
-  - --prefix=/usr --buildtype=release -Duse_qt_version=qt5
+    - --prefix=/usr --buildtype=release -Duse_qt_version=qt5
   source:
     type: git
     url: https://gitlab.com/desktop-frameworks/applications.git
@@ -48,7 +48,7 @@ modules:
 - name: dfl-utils
   type: meson
   buildflags:
-  - --prefix=/usr --buildtype=release
+    - --prefix=/usr --buildtype=release
   source:
     type: git
     url: https://gitlab.com/desktop-frameworks/utils.git
@@ -56,7 +56,7 @@ modules:
 - name: dfl-login
   type: meson
   buildflags:
-  - --prefix=/usr --buildtype=release
+    - --prefix=/usr --buildtype=release
   source:
     type: git
     url: https://gitlab.com/desktop-frameworks/login1.git
