@@ -13,6 +13,7 @@ modules:
     packages:
     - meson
     - ninja-build
+    - pkg-config
     - libpng-dev
     - qtbase5-dev
     - qtbase5-dev-tools
