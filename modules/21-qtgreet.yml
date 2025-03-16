@@ -21,6 +21,8 @@ modules:
     - qt6-base-dev
     - qt6-wayland
     - libwayland-dev
+    - libqt5waylandclient5 
+    - qtwayland5
 - name: wayqt
   type: meson
   buildflags:
