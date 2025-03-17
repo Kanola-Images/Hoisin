@@ -26,7 +26,6 @@ modules:
     - libqt5waylandclient5-dev
     - qtwayland5
     - qtwayland5-private-dev
-    - libqt5xkbcommon-dev
 - name: wayqt
   type: meson
   buildflags:
