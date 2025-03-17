@@ -29,6 +29,10 @@ modules:
     - qtwayland5
     - qtwayland5-private-dev
     - libmpv-dev
+- name: wlroots-workaround
+  type: shell
+  commands:
+  - apt install -y /usr/workarounds/libwlroots-dev_0.17.4-2+b1_amd64.deb
 - name: wayqt
   type: meson
   buildflags:
