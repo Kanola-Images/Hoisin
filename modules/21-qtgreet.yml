@@ -32,7 +32,7 @@ modules:
 - name: wlroots-workaround
   type: shell
   commands:
-  - apt install -y /usr/workarounds/libwlroots-dev_0.17.4-2+b1_amd64.deb
+  - apt install -y /usr/workarounds/libwlroots-dev_0.17.4-2+b1_amd64.deb /usr/workarounds/libwlroots12t64_0.17.4-2+b1_amd64.deb
 - name: wayqt
   type: meson
   buildflags:
