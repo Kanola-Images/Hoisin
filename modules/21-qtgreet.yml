@@ -1,6 +1,6 @@
 name: qtgreet
 type: meson
-meson_flags:
+buildflags:
   - --prefix=/usr 
   - --buildtype=release 
   - -Dbuild_greetwl=false
@@ -31,7 +31,7 @@ modules:
     - libmpv-dev
 - name: wayqt
   type: meson
-  meson_flags:
+  buildflags:
     - --prefix=/usr 
     - --buildtype=release
   source:
@@ -40,7 +40,7 @@ modules:
     tag: v0.2.0
 - name: dfl-ipc
   type: meson
-  meson_flags:
+  buildflags:
     - --prefix=/usr 
     - --buildtype=release
   source:
@@ -49,7 +49,7 @@ modules:
     tag: v0.2.0
 - name: dfl-apps
   type: meson
-  meson_flags:
+  buildflags:
     - --prefix=/usr 
     - --buildtype=release
   source:
@@ -58,7 +58,7 @@ modules:
     tag: v0.2.0
 - name: dfl-utils
   type: meson
-  meson_flags:
+  buildflags:
     - --prefix=/usr 
     - --buildtype=release
   source:
@@ -67,7 +67,7 @@ modules:
     tag: v0.2.0
 - name: dfl-login
   type: meson
-  meson_flags:
+  buildflags:
     - --prefix=/usr 
     - --buildtype=release
   source:
