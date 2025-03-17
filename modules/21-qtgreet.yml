@@ -1,7 +1,9 @@
 name: qtgreet
 type: meson
-buildflags:
-  - --prefix=/usr --buildtype=release -Dbuild_greetwl=false
+meson_flags:
+  - --prefix=/usr 
+  - --buildtype=release 
+  - -Dbuild_greetwl=false
 source:
   type: git
   url: https://github.com/marcusbritanicus/QtGreet.git
@@ -27,43 +29,47 @@ modules:
     - qtwayland5
     - qtwayland5-private-dev
     - libmpv-dev
-    - libwlroots-dev
 - name: wayqt
   type: meson
-  buildflags:
-    - --prefix=/usr --buildtype=release
+  meson_flags:
+    - --prefix=/usr 
+    - --buildtype=release
   source:
     type: git
     url: https://gitlab.com/desktop-frameworks/wayqt.git
     tag: v0.2.0
 - name: dfl-ipc
   type: meson
-  buildflags:
-    - --prefix=/usr --buildtype=release
+  meson_flags:
+    - --prefix=/usr 
+    - --buildtype=release
   source:
     type: git
     url: https://gitlab.com/desktop-frameworks/ipc.git
     tag: v0.2.0
 - name: dfl-apps
   type: meson
-  buildflags:
-    - --prefix=/usr --buildtype=release -Duse_qt_version=qt5
+  meson_flags:
+    - --prefix=/usr 
+    - --buildtype=release
   source:
     type: git
     url: https://gitlab.com/desktop-frameworks/applications.git
     tag: v0.2.0
 - name: dfl-utils
   type: meson
-  buildflags:
-    - --prefix=/usr --buildtype=release
+  meson_flags:
+    - --prefix=/usr 
+    - --buildtype=release
   source:
     type: git
     url: https://gitlab.com/desktop-frameworks/utils.git
     tag: v0.2.0
 - name: dfl-login
   type: meson
-  buildflags:
-    - --prefix=/usr --buildtype=release
+  meson_flags:
+    - --prefix=/usr 
+    - --buildtype=release
   source:
     type: git
     url: https://gitlab.com/desktop-frameworks/login1.git
