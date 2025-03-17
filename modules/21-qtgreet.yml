@@ -26,6 +26,7 @@ modules:
     - libqt5waylandclient5-dev
     - qtwayland5
     - qtwayland5-private-dev
+    - libmpv-dev
 - name: wayqt
   type: meson
   buildflags:
