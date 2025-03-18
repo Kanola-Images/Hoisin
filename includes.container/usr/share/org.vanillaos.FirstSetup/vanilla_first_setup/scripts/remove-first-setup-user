@@ -14,5 +14,6 @@ echo -e '[User]\nSession=firstsetup\nSystemAccount=true' > /var/lib/AccountsServ
 systemctl restart accounts-daemon.service
 cp /usr/share/org.vanillaos.FirstSetup/remove-first-setup-user.service /etc/systemd/system/remove-first-setup-user.service
 systemctl enable remove-first-setup-user.service
+usermod -s /usr/sbin/noshell vanilla
 rm /etc/greetd/config.toml
 mv /etc/greetd/config.toml.postsetup /etc/greetd/config.toml
