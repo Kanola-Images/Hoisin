@@ -8,13 +8,11 @@ if [ "$1" == "dark" ]; then
 
     gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
     gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
-    lookandfeeltool -a org.kde.breezedark.desktop
 
 elif [ "$1" == "light" ]; then
 
     gsettings set org.gnome.desktop.interface color-scheme "prefer-light"
     gsettings set org.gnome.desktop.interface gtk-theme "Adwaita"
-    lookandfeeltool -a org.kde.breeze.desktop
 
 else
     echo "usage:"
