@@ -1,0 +1,8 @@
+[Unit]
+Description=Hyprland Wayland compositor
+Wants=xdg-desktop-autostart.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/true
+RemainAfterExit=yes
