@@ -1,7 +1,7 @@
 name: hyprland-utilities
 type: apt
-source:
-  packages: #Please ignore the plasma tools - I just need a working system for testing, this will be swapped out later.
-  - plasma-disks
-  - plasma-systemmonitor
-  - kwalletmanager
+sources:
+  - packages: #Please ignore the plasma tools - I just need a working system for testing, this will be swapped out later.
+    - plasma-disks
+    - plasma-systemmonitor
+    - kwalletmanager

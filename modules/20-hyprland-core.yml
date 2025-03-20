@@ -1,24 +1,24 @@
 name: hyprland-core
 type: apt
-source:
-  packages:
-  - greetd
-  - libpam-systemd
+sources:
+  - packages:
+    - greetd
+    - libpam-systemd
 
-  - hyprland
-  - hyprland-backgrounds
-  - hyprpaper
-  - hyprcursor-util
-  - polkit-kde-agent-1 # hyprpolkitagent doesn't exist in debian yet ;(
+    - hyprland
+    - hyprland-backgrounds
+    - hyprpaper
+    - hyprcursor-util
+    - polkit-kde-agent-1 # hyprpolkitagent doesn't exist in debian yet ;(
 
-  - waybar
-  - tofi
-  
-  - dunst
-  - pipewire
-  - wireplumber
-  - qt6-wayland
+    - waybar
+    - tofi
+    
+    - dunst
+    - pipewire
+    - wireplumber
+    - qt6-wayland
 
-  - xdg-desktop-portal
-  - xdg-desktop-portal-hyprland
-  - xdg-desktop-portal-gtk
+    - xdg-desktop-portal
+    - xdg-desktop-portal-hyprland
+    - xdg-desktop-portal-gtk
