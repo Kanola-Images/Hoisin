@@ -1,6 +1,6 @@
 name: Hoisin Hyprland Desktop
 id: hyprland
-vibversion: 1.0
+vibversion: 1.0.1
 
 stages:
 - id: build
