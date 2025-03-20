@@ -5,7 +5,7 @@ vibversion: 1.0.1
 stages:
 - id: build
   base: ghcr.io/kanola-images/hoisin-pre:main
-  addIncludes: true
+  addincludes: true
   labels:
     maintainer: Kanola Contributors
   args:
