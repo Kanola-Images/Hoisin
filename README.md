@@ -2,7 +2,7 @@
 
 Containerfile for building Kanola, an unofficial Vanilla OS Hyprland image.
 
-This image is based on top of [`kanola-images/base`](https://github.com/Kanola-Images/Base-Image/pkgs/container/base) and offers the default
+This image is based on top of [`kanola-images/hoisin-pre`](https://github.com/Kanola-Images/Hoisin-Prebuild/pkgs/container/hoisin-pre) which is itself based on [`kanola-images/base`](https://github.com/Kanola-Images/Base-Image/pkgs/container/base) and offers the default
 Unofficial Vanilla OS Desktop Experience with Hyprland.
 
 ## Switch your Installation to this image
