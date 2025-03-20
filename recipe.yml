@@ -3,7 +3,7 @@ id: hyprland
 
 stages:
 - id: build
-  base: ghcr.io/kanola-images/base:main
+  base: ghcr.io/kanola-images/hoisin-pre:main
   singlelayer: false
   labels:
     maintainer: Kanola Contributors
@@ -39,7 +39,6 @@ stages:
     type: includes
     includes:
       - modules/20-hyprland-core.yml
-      - modules/21-qtgreet.yml
       - modules/30-hyprland-essentials.yml
       - modules/161-hyprland-utilities.yml
       - modules/200-hyprland-common.yml
