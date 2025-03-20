@@ -23,19 +23,6 @@ stages:
     - apt upgrade -y
     - apt clean
 
-  - name: vanilla-tools
-    type: shell
-    sources:
-      - type: tar
-        # switch to production build once in production
-        url: https://github.com/Vanilla-OS/vanilla-tools/releases/download/continuous/vanilla-tools.tar.gz
-    commands:
-    - mkdir -p /usr/bin
-    - cp /sources/vanilla-tools/vanilla-tools/lpkg /usr/bin/lpkg
-    - cp /sources/vanilla-tools/vanilla-tools/cur-gpu /usr/bin/cur-gpu
-    - chmod +x /usr/bin/lpkg
-    - chmod +x /usr/bin/cur-gpu
-
   - name: packages-modules
     type: includes
     includes:
