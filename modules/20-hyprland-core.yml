@@ -5,11 +5,8 @@ sources:
     - greetd
     - libpam-systemd
 
-    - hyprland
     - hyprland-backgrounds
     - hyprpaper
-    - hyprcursor-util
-    - polkit-kde-agent-1 # hyprpolkitagent doesn't exist in debian yet ;(
 
     - waybar
     - tofi
@@ -20,5 +17,4 @@ sources:
     - qt6-wayland
 
     - xdg-desktop-portal
-    - xdg-desktop-portal-hyprland
     - xdg-desktop-portal-gtk

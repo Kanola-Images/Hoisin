@@ -28,7 +28,6 @@ stages:
     includes:
       - modules/20-hyprland-core.yml
       - modules/30-hyprland-essentials.yml
-      - modules/161-hyprland-utilities.yml
       - modules/200-hyprland-common.yml
       - modules/999-cleanup.yml
 

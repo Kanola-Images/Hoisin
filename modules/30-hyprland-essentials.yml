@@ -2,6 +2,4 @@ name: hyprland-essentials
 type: apt
 sources:
   - packages: #Please ignore the plasma tools - I just need a working system for testing, this will be swapped out later.
-    - ark #todo: remove
     - dolphin #todo: replace with Yazi
-    - dolphin-plugins
