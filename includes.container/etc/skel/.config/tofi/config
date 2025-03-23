@@ -289,12 +289,12 @@
 
 	# If true, directly launch applications on selection when in drun mode.
 	# Otherwise, just print the command line to stdout.
-	drun-launch = true
+	drun-launch = false
 
 	# The terminal to run terminal programs in when in drun mode.
 	# This option has no effect if drun-launch is set to true.
 	# Defaults to the value of the TERMINAL environment variable.
-    # terminal = blackbox-terminal
+    terminal = blackbox-terminal
 
 	# Delay keyboard initialisation until after the first draw to screen.
 	# This option is experimental, and will cause tofi to miss keypresses
