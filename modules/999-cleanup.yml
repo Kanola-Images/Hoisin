@@ -6,4 +6,5 @@ commands:
 - chmod -R 755 /usr/share/org.vanillaos.FirstSetup
 - rm /usr/share/wayland-sessions/firstsetup.desktop
 - rm /usr/share/xsessions/firstsetup.desktop
+- rm /usr/local/share/wayland-sessions/hyprland-uwsm.desktop
 - mv /etc/greetd/config.toml.override /etc/greetd/config.toml
