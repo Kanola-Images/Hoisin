@@ -2,20 +2,5 @@ name: hyprland-common
 type: apt
 sources:
   - packages: #Please ignore the plasma tools - I just need a working system for testing, this will be swapped out later.
-    - heif-thumbnailer
-    - webp-pixbuf-loader
-    - bluedevil
-    - ibus-data
-    - kde-config-gtk-style
-    - kde-config-screenlocker
-    - kgamma
-    - khelpcenter
-    - kinfocenter
-    - kio-extras
-    - kmenuedit
-    - kscreen
-    - ksshaskpass
-    - kwrited
     - libpam-kwallet5
-    - powerdevil
-    - systemsettings
+    - fonts-font-awesome
