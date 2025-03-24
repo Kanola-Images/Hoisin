@@ -5,7 +5,7 @@
   "registryService": "registry.ghcr.io",
   "registryAPIVersion": "v2",
   "name": "kanola-images/hyprland",
-  "tag": "main",
+  "tag": "dev",
   "iPkgMngPre": "lpkg --unlock",
   "iPkgMngPost": "lpkg --lock",
   "iPkgMngAdd": "apt-get install -y",
